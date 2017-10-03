@@ -4,8 +4,8 @@
   <div class="row" align="center">
     <div class="listing">
       <li>Created by:</li>
-      <li><%= link_to gravatar_for(@article.user), user_path(user)%></li>
-      <li><%= link_to @article.user.username, user_path(user)%></li>
+      <li><%= link_to gravatar_for(@article.user), user_path(@article.user)%></li>
+      <li><%= link_to @article.user.username, user_path(@article.user)%></li>
     </div>
   </div>
 <% end %>
